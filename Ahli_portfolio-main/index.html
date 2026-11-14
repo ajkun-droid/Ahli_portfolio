@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Student Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ahli.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Student<span>Dev</span></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3>Hello, I'm</h3>
+                    <h1>Ahli Josh <span class="highlight">Del Rosario</span></h1>
+                    <h2>BS in Information Technology Student</h2>
+                    <p>3rd year IT student passionate about web development, and creating impactful solutions through code.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        <button type="button" class="btn btn-outline" id="downloadResumeButton">
+                            <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download CV
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+             <img src="assets/myprofile.jpg" alt="ahli">
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Journey in BS Information Technology</h3>
+                    <p>I'm currently in my 3rd year of BS Information Technology at UM Digos College. Over my academic journey, I've developed a strong foundation in programming and problem-solving through various projects.</p>
+                    <p>My technical interests include full-stack web development, mobile applications, and machine learning. I'm always eager to learn new technologies and apply them to real-world challenges.</p>
+                    
+                    <div class="skills">
+                        <h4>Technical Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/deyb.jpg" alt="University Life">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects portfolio-section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-card-grid">
+                <button type="button" class="portfolio-card" id="projectsToggle" aria-expanded="false" aria-controls="projectsPanel">
+                    <i class="fas fa-briefcase portfolio-card-icon" aria-hidden="true"></i>
+                    <span class="portfolio-card-title">Projects</span>
+                    <span class="section-toggle-label portfolio-card-action">View My Projects</span>
+                </button>
+                <div class="portfolio-card-item" id="certifications">
+                    <button type="button" class="portfolio-card" id="certificationsToggle" aria-expanded="false" aria-controls="certificationsPanel">
+                        <i class="fas fa-award portfolio-card-icon" aria-hidden="true"></i>
+                        <span class="portfolio-card-title">Certificates</span>
+                        <span class="section-toggle-label portfolio-card-action">View My Certifications</span>
+                    </button>
+                </div>
+                <div class="portfolio-card-item" id="achievements">
+                    <button type="button" class="portfolio-card" id="achievementsToggle" aria-expanded="false" aria-controls="achievementsPanel">
+                        <i class="fas fa-trophy portfolio-card-icon" aria-hidden="true"></i>
+                        <span class="portfolio-card-title">Achievements</span>
+                        <span class="section-toggle-label portfolio-card-action">View Achievements</span>
+                    </button>
+                </div>
+            </div>
+            <div id="projectsPanel" class="collapsible-panel" hidden aria-hidden="true" inert>
+                <div class="collapsible-panel-inner">
+                    <h2 class="portfolio-panel-heading">My Projects</h2>
+                    <div class="projects-grid">
+                <!-- 1st Year Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Mobile Application</h3>
+                    </div>
+                    <div class="project-image project-image--boarding">
+                        <img src="assets/android.jpg" alt="Boarding house reservation app login screen" decoding="async">
+                    </div>
+                    <div class="project-info">  
+                        <p>An Android application built with Java to reserve boarding houses near UM Digos College.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">OOP</span>
+                            <span class="project-tag">File Handling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assets/android.jpg" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-image"></i> View Image
+                            </a>
+                            <span class="project-info-text">
+                                <i class="fas fa-info-circle"></i> Code available upon request
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2nd Year Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Flutter Application</h3>
+                    </div>
+                    <div class="project-image project-image--precinct">
+                        <img src="assets/flutter.jpg" alt="Vote Path Finder mobile application screen" decoding="async">
+                    </div>
+                    <div class="project-info">
+                        <p>A precinct finder app that helps election staff verify voter registration and locate precinct information.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assets/flutter.jpg" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-image"></i> View Image
+                            </a>
+                            <span class="project-info-text">
+                                <i class="fas fa-info-circle"></i> Code available upon request
+                            </span>
+                            <a href="assets/flutter.mp4" class="project-link" target="_blank">
+                                <i class="fas fa-play-circle"></i> View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3rd Year Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SIA Application</h3>
+                    </div>
+                    <div class="project-image project-image--portal">
+                        <img src="assets/app.jpg" alt="Barangay Portal mobile application screen" decoding="async">
+                    </div>
+                    <div class="project-info">
+                        <p>A React-based task management application with drag-drop functionality, deadlines, and priority settings.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assets/app.jpg" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-image"></i> View Image
+                            </a>
+                            <span class="project-info-text">
+                                <i class="fas fa-info-circle"></i> Code available upon request
+                            </span>
+                            <a href="assets/website.jpg" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Web App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="projects-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1st Year</div>
+                    <div class="timeline-content">
+                        <h4>Foundation Building</h4>
+                        <p>Focused on core programming concepts, algorithms, and data structures.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2nd Year</div>
+                    <div class="timeline-content">
+                        <h4>Web Development</h4>
+                        <p>Learned full-stack web development and database management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">3rd Year</div>
+                    <div class="timeline-content">
+                        <h4>Advanced Projects</h4>
+                        <p>Working on complex applications with modern frameworks and APIs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div id="certificationsPanel" class="collapsible-panel" hidden aria-hidden="true" inert>
+                <div class="collapsible-panel-inner">
+                    <h2 class="portfolio-panel-heading">Certifications &amp; Achievements</h2>
+                    <div class="credentials-grid">
+                        <article class="credential-card">
+                            <div class="credential-card-icon">
+                                <i class="fas fa-award" aria-hidden="true"></i>
+                            </div>
+                            <div class="credential-card-content">
+                                <div class="credential-badges">
+                                    <span class="credential-badge">Certification</span>
+                                    <span class="credential-badge">Achievement</span>
+                                </div>
+                                <h3>No credentials added yet</h3>
+                                <p>No certification or achievement details have been added to the portfolio yet.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div id="achievementsPanel" class="collapsible-panel" hidden aria-hidden="true" inert>
+                <div class="collapsible-panel-inner">
+                    <h2 class="portfolio-panel-heading">Achievements</h2>
+                    <div class="credentials-grid">
+                        <article class="credential-card">
+                            <div class="credential-card-icon">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
+                            </div>
+                            <div class="credential-card-content">
+                                <div class="credential-badges">
+                                    <span class="credential-badge">Achievement</span>
+                                </div>
+                                <h3>No achievements added yet</h3>
+                                <p>No achievement details have been added to the portfolio yet.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm currently seeking internship opportunities and would love to discuss potential collaborations or projects.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ahli.josh@student.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+63 927 955 8759</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>UM Digos College, Digos City</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/ahli-josh" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ahli-josh" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://facebook.com/ahli.josh" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article id="resumeDocument" class="resume-print" aria-hidden="true">
+        <header class="resume-print-header">
+            <h1>Ahli Josh Del Rosario</h1>
+            <p class="resume-print-title">BS Information Technology Student</p>
+            <p>ahli.josh@student.edu | +63 912 345 6789 | UM Digos College, Digos City</p>
+        </header>
+
+        <section>
+            <h2>Profile</h2>
+            <p>Third-year Information Technology student at UM Digos College with a foundation in programming and problem-solving. Interested in web development, mobile applications, and machine learning.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Information Technology</strong><br>University of Mindanao Digos College | Third year</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p>HTML/CSS, JavaScript, Python, Java, React, Node.js, SQL, Git</p>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="resume-project">
+                <h3>Mobile Application</h3>
+                <p>Android application for reserving boarding houses near UM Digos College.</p>
+                <p><strong>Technologies:</strong> Java, OOP, File Handling</p>
+            </div>
+            <div class="resume-project">
+                <h3>Flutter Application</h3>
+                <p>Precinct finder app that helps election staff verify voter registration and locate precinct information.</p>
+                <p><strong>Technologies:</strong> HTML/CSS, JavaScript, PHP, MySQL</p>
+            </div>
+            <div class="resume-project">
+                <h3>SIA Application</h3>
+                <p>Task management application with drag-and-drop functionality, deadlines, and priority settings.</p>
+                <p><strong>Technologies:</strong> React, Node.js, MongoDB, Express</p>
+            </div>
+        </section>
+    </article>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3 id="modalProjectTitle">Project Title</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="Project Image">
+                    <div id="modalVideoContainer" class="video-container">
+                        <video id="modalVideo" controls>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-description">
+                        <h4>Project Description</h4>
+                        <p id="modalDescription">Project description will appear here...</p>
+                    </div>
+                    <div class="modal-technologies">
+                        <h4>Technologies Used</h4>
+                        <div id="modalTags" class="modal-tags"></div>
+                    </div>
+                    <div class="modal-features">
+                        <h4>Key Features</h4>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    <div class="modal-links">
+                        <a href="#" id="modalCodeLink" class="modal-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" id="modalLiveLink" class="modal-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Ahli Josh</h3>
+                    <p>Information Technology Student</p>
+                    <p>Passionate about creating innovative solutions through code.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Ahli Josh Del Rosario. All rights reserved.</p>
+                <p>University of Mindanao Digos College Department of Technical Programs</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ahli.js"></script>
+</body>
+</html>
+
